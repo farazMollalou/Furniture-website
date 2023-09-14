@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "imgFileName": "sofa.png",
+            "price": 79,
+            "title": "Royal single sofa"
+        },
+        {
+            "id": 1,
+            "imgFileName": "sofa2.png",
+            "price": 99,
+            "title": "Chester sofa"
+        },
+        {
+            "id": 2,
+            "imgFileName": "sofa3.png",
+            "price": 112,
+            "title": "Royal sofa"
+        }
+    ]
+}

@@ -68,6 +68,7 @@
             background-color: var(--main-color);
             color: #fff;
             gap: 14px;
+            cursor: default;
 
             svg {
                 font-size: 28px;
@@ -80,24 +81,11 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            background-color: #E3E3E3;
+            background-color: #F7F8FA;
             width: 100%;
             overflow: hidden;
-            opacity: 1;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            animation: showList 1s linear;
-
-            @keyframes showList {
-                from {
-                    opacity: 0;
-                    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                }
-
-                to {
-                    opacity: 1;
-                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                }
-            }
+            z-index: 2;
 
             .item {
                 width: 100%;
