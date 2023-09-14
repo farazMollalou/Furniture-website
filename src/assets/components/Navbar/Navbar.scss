@@ -1,0 +1,123 @@
+.navbar-container {
+    width: 100%;
+    height: 70px;
+    background-color: #F7F8FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .links-box {
+        width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            color: #555;
+            transition: .4s;
+            position: relative;
+            padding: 3px 14px;
+
+            &::after,
+            &::before {
+                content: "";
+                width: 0;
+                height: 2px;
+                border-radius: 5px;
+                background-color: var(--main-color);
+                position: absolute;
+                transition: .4s;
+            }
+
+            &::after {
+                left: -14px;
+                bottom: 0;
+            }
+
+            &::before {
+                right: -14px;
+                top: 0;
+            }
+
+            &:hover::after {
+                width: 70%;
+                left: -4px;
+            }
+
+            &:hover::before {
+                width: 70%;
+                right: -4px;
+            }
+        }
+    }
+
+    .collecton-containter {
+        position: absolute;
+        left: 150px;
+        height: 100%;
+
+        .collection-btn {
+            width: 260px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--main-color);
+            color: #fff;
+            gap: 14px;
+
+            svg {
+                font-size: 28px;
+            }
+        }
+
+        .collection-list {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #E3E3E3;
+            width: 100%;
+            overflow: hidden;
+            opacity: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            animation: showList 1s linear;
+
+            @keyframes showList {
+                from {
+                    opacity: 0;
+                    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                }
+
+                to {
+                    opacity: 1;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+            }
+
+            .item {
+                width: 100%;
+                height: 35px;
+                padding-left: 40px;
+                color: #555;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                border-top: 1px solid #dadada;
+                transition: .4s;
+                cursor: pointer;
+
+                &:hover {
+                    padding-left: 60px;
+                    color: var(--main-color);
+                    background-color: #ececec;
+                }
+            }
+        }
+    }
+
+}
