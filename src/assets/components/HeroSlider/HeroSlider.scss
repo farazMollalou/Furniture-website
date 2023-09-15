@@ -83,6 +83,7 @@
                 justify-content: flex-start;
                 flex-direction: column;
                 cursor: default;
+                user-select: none;
 
                 .top-text {
                     color: var(--main-color);
