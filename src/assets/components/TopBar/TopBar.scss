@@ -43,13 +43,72 @@
             }
         }
 
-        .search-filter-select {
-            width: 100px;
+        .search-filter-select-box {
+            width: 120px;
+            height: 40px;
             border: none;
             text-align: center;
             color: #3f3f3f;
+            background-color: #f0f0f0;
             outline: none;
+            position: relative;
             border-left: 1px gray solid;
+
+            .selected-collection {
+                width: 120px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 10px;
+                font-weight: 600;
+                font-size: 18px;
+                position: relative;
+                cursor: pointer;
+
+                svg {
+                    position: absolute;
+                    right: 12px;
+                    font-size: 20px;
+                    color: #3f3f3f;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .search-filter-select-list {
+                position: absolute;
+                z-index: 5;
+                width: 152px;
+                transform: translate(-33px, 0);
+                clip-path: polygon(0 0, 100% 0, 0 0, 0 42%);
+                transition: .5s;
+
+                &.opened {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                }
+
+                li {
+                    list-style-type: none;
+                    background-color: var(--main-color);
+                    height: 35px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: var(--main-color);
+                        border: 2px solid var(--main-color);
+                    }
+
+                    &:nth-last-child(1) {
+                        border-radius: 0 0 10px 10px;
+                    }
+                }
+            }
         }
 
         .search-btn {

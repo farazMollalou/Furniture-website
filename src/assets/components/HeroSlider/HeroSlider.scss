@@ -37,11 +37,11 @@
                 cursor: pointer;
 
                 &.selected {
-                    border: 2px solid var(--main-color);
-                    box-shadow: 1px 1px 4px var(--main-color),
-                        -1px -1px 4px var(--main-color),
-                        -1px 1px 4px var(--main-color),
-                        1px -1px 4px var(--main-color);
+                    border: 1px solid var(--main-color);
+                    box-shadow: 1px 1px 7px var(--main-color),
+                        -1px -1px 7px var(--main-color),
+                        -1px 1px 7px var(--main-color),
+                        1px -1px 7px var(--main-color);
                 }
 
                 img {
@@ -76,12 +76,13 @@
             }
 
             .text-box {
-                width: 45%;
+                width: 50%;
                 height: 60%;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: column;
+                cursor: default;
 
                 .top-text {
                     color: var(--main-color);
@@ -92,7 +93,7 @@
                 .bold-text {
                     text-align: center;
                     font-weight: 700;
-                    font-size: 34px;
+                    font-size: 32px;
                 }
 
                 .off-text {
@@ -132,6 +133,8 @@
                 height: 12px;
                 border-radius: 50%;
                 background-color: #5182c74a;
+                transition: .3s;
+                cursor: pointer;
 
                 &.focus {
                     width: 24px;

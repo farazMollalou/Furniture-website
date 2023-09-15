@@ -3,8 +3,14 @@ import { ImSearch } from 'react-icons/im'
 import { PiHandbagLight } from 'react-icons/pi'
 import { FiBell } from 'react-icons/fi'
 import { BiUser } from 'react-icons/bi'
+import { FiArrowDownCircle } from 'react-icons/fi'
+import { useState } from 'react'
 
 function TopBar() {
+
+    const [selectedCollection, setSelectedCollection] = useState("Sofa")
+    const [selectListOpen, setSelectListOpen] = useState(false)
+
     return (
         <>
             <div className="top-bar">
@@ -14,12 +20,25 @@ function TopBar() {
                 </div>
                 <div className="search-box">
                     <input type="text" placeholder='Search here' />
-                    <select className="search-filter-select">
-                        <option value="">Sofa</option>
-                        <option value="">Lamp</option>
-                        <option value="">TV</option>
-                        <option value="">Kitchen</option>
-                    </select>
+                    <div className="search-filter-select-box">
+                        <span
+                            className="selected-collection"
+                            onMouseEnter={() => setSelectListOpen(true)}
+                            onMouseLeave={() => setSelectListOpen(false)}
+                        >
+                            {selectedCollection} {<FiArrowDownCircle />}
+                        </span>
+                        <ul
+                            className={`search-filter-select-list ${selectListOpen && "opened"}`}
+                            onMouseLeave={() => setSelectListOpen(false)}
+                            onMouseEnter={() => setSelectListOpen(true)}
+                        >
+                            <li className='filter-item' onClick={() => {setSelectedCollection("Sofa"); setSelectListOpen(false)}}>Sofa</li>
+                            <li className='filter-item' onClick={() => {setSelectedCollection("Lamp"); setSelectListOpen(false)}}>Lamp</li>
+                            <li className='filter-item' onClick={() => {setSelectedCollection("TV"); setSelectListOpen(false)}}>TV</li>
+                            <li className='filter-item' onClick={() => {setSelectedCollection("Kitchen"); setSelectListOpen(false)}}>Kitchen</li>
+                        </ul>
+                    </div>
                     <span className="search-btn"><ImSearch /></span>
                 </div>
                 <div className="user-icons-box">

@@ -39,9 +39,9 @@ function HeroSlider() {
                     }
                 </div>
                 <div className="circles-box">
-                    <span className={`circle ${selectedProductID==0 && "focus"}`}></span>
-                    <span className={`circle ${selectedProductID==1 && "focus"}`}></span>
-                    <span className={`circle ${selectedProductID==2 && "focus"}`}></span>
+                    <span className={`circle ${selectedProductID==0 && "focus"}`} onClick={() => setSelectedProductID(0)}></span>
+                    <span className={`circle ${selectedProductID==1 && "focus"}`} onClick={() => setSelectedProductID(1)}></span>
+                    <span className={`circle ${selectedProductID==2 && "focus"}`} onClick={() => setSelectedProductID(2)}></span>
                 </div>
             </div>
         </div>
