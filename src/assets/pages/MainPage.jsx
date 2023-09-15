@@ -1,3 +1,4 @@
+import AdvantagesSection from "../components/Advantages/AdvantagesSection"
 import HeroSlider from "../components/HeroSlider/HeroSlider"
 import Navbar from "../components/Navbar/Navbar"
 import TopBar from "../components/TopBar/TopBar"
@@ -10,6 +11,7 @@ function MainPage() {
       <TopBar />
       <Navbar />
       <HeroSlider />
+      <AdvantagesSection />
     </>
   )
 }

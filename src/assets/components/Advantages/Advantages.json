@@ -1,0 +1,24 @@
+{
+    "advantages": [
+        {
+            "imgFileName": "free-delivery.png",
+            "title": "Free Shipping",
+            "message": "Orders over $100"
+        },
+        {
+            "imgFileName": "present.png",
+            "title": "Smart Gift Card",
+            "message": "Buy $1000 to get card"
+        },
+        {
+            "imgFileName": "wallet.png",
+            "title": "Quick Payment",
+            "message": "100% secure payment"
+        },
+        {
+            "imgFileName": "support.png",
+            "title": "24/7 Support",
+            "message": "Quick support"
+        }
+    ]
+}
