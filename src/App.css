@@ -7,7 +7,7 @@
 :root {
   /* --main-color: #7AC751; */
   --main-color: #7600c4;
-  --box-shd: 3px 3px 5px #c7c7c7;
+  --box-shd: 3px 3px 5px #dedede;
 }
 
 ::-webkit-scrollbar {

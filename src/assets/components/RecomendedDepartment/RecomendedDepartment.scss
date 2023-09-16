@@ -7,36 +7,38 @@
     justify-content: center;
 
     .offers-wrapper {
-        width: 1150px;
-        // height: 400px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        width: 95%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 14px;
 
-        .offer-1, .offer-2, .offer-3 {
+        .offer-1,
+        .offer-2,
+        .offer-3 {
             a {
                 text-decoration: none;
             }
         }
+
+        .offer-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         img {
             border-radius: 5px;
             box-shadow: var(--box-shd);
         }
-        .offer-1 {
-            grid-area: 1 / 1 / 5 / 3;
-        }
 
-        .offer-2 {
-            grid-area: 1 / 4 / 3 / 5;
-            width: 450px;
-            height: 250px;
-        }
-
-        .offer-3 {
-            grid-area: 3 / 4 / 5 / 5;
-            width: 450px;
-            height: 250px;
+        .small-divs {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            gap: 12px;
         }
     }
 }

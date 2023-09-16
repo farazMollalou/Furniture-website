@@ -23,7 +23,7 @@ function HeroSlider() {
                         <button className='buy-btn'>SHOP NOW</button>
                     </div>
                     <img
-                        src={`./../../../../public/slider-imgs/${sliderProducts.products[selectedProductID].imgFileName}`}
+                        src={`./../../../../public/general_images/slider-imgs/${sliderProducts.products[selectedProductID].imgFileName}`}
                         alt="sofa"
                     />
                 </div>
@@ -31,7 +31,7 @@ function HeroSlider() {
                     {
                         sliderProducts.products.map(product => (
                             <div className={`item ${(selectedProductID === product.id) && "selected"}`} key={product.id} onClick={() => setSelectedProductID(product.id)}>
-                                <img src={`./../../../../public/slider-imgs/${product.imgFileName}`} alt="sofa" />
+                                <img src={`./../../../../public/general_images/slider-imgs/${product.imgFileName}`} alt="sofa" />
                                 <span className="price">${product.price}</span>
                                 <b className='product-title'>{product.title}</b>
                             </div>
