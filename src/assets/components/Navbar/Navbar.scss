@@ -4,7 +4,8 @@
     background-color: #F7F8FA;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 150px;
     position: relative;
 
     .links-box {
@@ -55,9 +56,10 @@
     }
 
     .collecton-containter {
-        position: absolute;
-        left: 150px;
+        position: relative;
+        // left: 7%;
         height: 100%;
+        margin-right: 20px;
 
         .collection-btn {
             width: 260px;

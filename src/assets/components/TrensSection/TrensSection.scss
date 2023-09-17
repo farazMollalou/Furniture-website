@@ -62,10 +62,10 @@
 
     .trend-items-wrapper {
         margin-top: 30px;
-        width: 80%;
+        width: 90%;
         min-height: 70vh;
-        display: grid;
-        row-gap: 30px;
-        grid-template-columns: repeat(4, auto);
+        @include flex();
+        flex-wrap: wrap;
+        gap: 30px;
     }
 }

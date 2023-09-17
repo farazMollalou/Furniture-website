@@ -37,11 +37,7 @@
                 cursor: pointer;
 
                 &.selected {
-                    border: 1px solid var(--main-color);
-                    box-shadow: 1px 1px 7px var(--main-color),
-                        -1px -1px 7px var(--main-color),
-                        -1px 1px 7px var(--main-color),
-                        1px -1px 7px var(--main-color);
+                    border: 3px groove var(--main-color);
                 }
 
                 img {

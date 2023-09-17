@@ -1,4 +1,5 @@
 import ProductCard from '../ProductCard/ProductCard'
+import trendsList from "./TrendProducts.json"
 import './TrensSection.scss'
 
 function TrensSection() {
@@ -11,13 +12,20 @@ function TrensSection() {
                 <span className='trend-item'>Best Sellers</span>
             </div>
             <div className="trend-items-wrapper">
-                <ProductCard rate={4}/>
-                <ProductCard rate={3}/>
-                <ProductCard rate={4}/>
-                <ProductCard rate={5}/>
-                <ProductCard rate={4}/>
-                <ProductCard rate={2}/>
-                <ProductCard rate={1}/>
+                {
+                    trendsList.trends.map(product => (
+                        <ProductCard
+                            key={product.id}
+                            title={product.title}
+                            category={product.category}
+                            rate={product.rate}
+                            img={product.imgFileName}
+                            old_price={product.old_price}
+                            current_price={product.current_price}
+                            status={product.status}
+                        />
+                    ))
+                }
             </div>
         </section>
     )
