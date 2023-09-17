@@ -1,0 +1,27 @@
+.special-offer-section {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 60px;
+
+    .special-section-title {
+        color: #555555;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    .special-products-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        
+        img {
+            border-radius: 7px;
+            box-shadow: var(--box-shd);
+        }
+    }
+}
