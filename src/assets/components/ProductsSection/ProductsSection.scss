@@ -1,0 +1,121 @@
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-section {
+    width: 100%;
+    min-height: 100vh;
+    @include flex();
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 40px;
+    padding-bottom: 50px;
+
+    .products-title {
+        color: #555555;
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    .products-section-row {
+        width: 50%;
+        @include flex();
+        justify-content: space-between;
+
+        .filter-item {
+            color: #C2C2C2;
+            font-weight: 600;
+            font-size: 24px;
+            position: relative;
+            padding: 3px 5px;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 3px;
+                background-color: var(--main-color);
+                left: -10px;
+                bottom: 0;
+                transition: .5s;
+            }
+
+            &:hover::after {
+                left: 0;
+                width: 45%;
+            }
+
+            &.focus {
+                color: var(--main-color);
+                cursor: default;
+
+                &::after {
+                    background-color: unset;
+                }
+            }
+        }
+    }
+
+    .products-container {
+        margin-top: 30px;
+        width: 90%;
+        min-height: 70vh;
+        @include flex();
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .pagination-wrapper {
+        width: 100%;
+        height: 100px;
+        @include flex();
+
+        .pagination-box {
+            width: 600px;
+            height: 50px;
+            border-radius: 50px;
+            box-shadow: var(--box-shd);
+            @include flex();
+            justify-content: space-between;
+
+            .pagination-btn {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                @include flex();
+                background-color: var(--main-color);
+                cursor: pointer;
+                
+                svg {
+                    color: #fff;
+                }
+            }
+            .pages-numbers {
+                width: 50%;
+                @include flex();
+                justify-content: space-between;
+                user-select: none;
+
+                .number {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #555555;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    @include flex();
+                    transition: .4s;
+                    border-radius: 10px;
+
+                    &.current-page {
+                        color: #fff;
+                        background-color: var(--main-color);
+                    }
+                }
+            }
+        }
+    }
+}

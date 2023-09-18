@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "title": "Minimal LCD chair",
+            "category": "CHAIR",
+            "old_price": 250,
+            "current_price": 180,
+            "rate": 5,
+            "imgFileName": "1.png",
+            "status": "Sale"
+        },
+        {
+            "id": 1,
+            "title": "Minimal iconic chair",
+            "category": "CHAIR",
+            "old_price": 150,
+            "current_price": 120,
+            "rate": 4,
+            "imgFileName": "2.png",
+            "status": "Sale"
+        },
+        {
+            "id": 2,
+            "title": "Dining chairs",
+            "category": "CHAIR",
+            "old_price": 120,
+            "current_price": 100,
+            "rate": 5,
+            "imgFileName": "3.png",
+            "status": "New"
+        },
+        {
+            "id": 3,
+            "title": "Buskbo armchair ",
+            "category": "CHAIR",
+            "old_price": 150,
+            "current_price": 130,
+            "rate": 4,
+            "imgFileName": "4.png",
+            "status": "New"
+        },
+        {
+            "id": 4,
+            "title": "Modern chairs",
+            "category": "CHAIR",
+            "old_price": 120,
+            "current_price": 100,
+            "rate": null,
+            "imgFileName": "5.png",
+            "status": "New"
+        },
+        {
+            "id": 5,
+            "title": "Plastic dining chair",
+            "category": "CHAIR",
+            "old_price": 150,
+            "current_price": 130,
+            "rate": 4,
+            "imgFileName": "6.png",
+            "status": "New"
+        },
+        {
+            "id": 6,
+            "title": "Minimal Wood chair",
+            "category": "CHAIR",
+            "old_price": 250,
+            "current_price": 180,
+            "rate": 5,
+            "imgFileName": "7.png",
+            "status": "Sale"
+        },
+        {
+            "id": 7,
+            "title": "Elegent wood chair",
+            "category": "CHAIR",
+            "old_price": 150,
+            "current_price": 120,
+            "rate": 4,
+            "imgFileName": "8.png",
+            "status": "Sale"
+        }
+    ]
+}

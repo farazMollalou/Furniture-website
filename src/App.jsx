@@ -1,4 +1,4 @@
-import MainPage from './assets/pages/mainPage.jsx'
+import MainPage from "./assets/pages/MainPage.jsx"
 import './App.css';
 
 function App() {
