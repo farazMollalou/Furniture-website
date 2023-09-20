@@ -1,4 +1,5 @@
 import AdvantagesSection from "../components/Advantages/AdvantagesSection"
+import Footer from "../components/Footer/Footer"
 import HeroSlider from "../components/HeroSlider/HeroSlider"
 import Navbar from "../components/Navbar/Navbar"
 import ProductsSection from "../components/ProductsSection/ProductsSection"
@@ -20,6 +21,7 @@ function MainPage() {
       <TrensSection />
       <SpecialOfferSection />
       <ProductsSection />
+      <Footer />
     </>
   )
 }
