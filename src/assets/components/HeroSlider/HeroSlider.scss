@@ -1,16 +1,18 @@
 .slider-section {
     width: 100%;
     position: relative;
-    min-height: calc(100vh - 210px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    margin-bottom: 50px;
 
     .slider-box {
-        position: absolute;
         width: 800px;
         height: 380px;
         border-radius: 5px;
         background: linear-gradient(103.4deg, rgba(241, 250, 255, 0.88) 0.89%, #F1FAFF 101.61%);
-        left: 420px;
-        top: 10px;
+        transform: translateX(100px);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -69,6 +71,7 @@
 
             img {
                 width: 45%;
+                border-radius: 10px;
             }
 
             .text-box {

@@ -1,11 +1,14 @@
-import MainPage from "./assets/pages/MainPage.jsx"
+import { useRoutes } from "react-router-dom"
+import routes from "./assets/Routes";
 import './App.css';
 
 function App() {
 
+  const router = useRoutes(routes)
+
   return (
     <>
-      <MainPage />
+      {router}
     </>
   )
 }
