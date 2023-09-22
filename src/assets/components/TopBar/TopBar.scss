@@ -161,3 +161,57 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .top-bar {
+        padding: 0 20px;
+    
+        .search-box {
+            width: 55%;
+
+            .search-filter-select-box {
+                width: 100px;
+
+                .selected-collection {
+                    width: 100px;
+                }
+                .search-filter-select-list {
+                    width: 135px;
+                }
+            }
+        }
+        .user-icons-box {
+            width: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        padding: 0 30px;
+        .brand-box {
+            strong {
+                font-size: 18px;
+            }
+        }
+        .search-box {
+            width: 70%;
+        }
+        .user-icons-box {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .top-bar {
+        justify-content: center;
+        padding: 0;
+        .brand-box {
+            display: none;
+        }
+        .search-box {
+            width: 95%;
+        }
+    }
+}

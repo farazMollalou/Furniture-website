@@ -5,6 +5,10 @@ function TopStrip() {
     <>
       <div className="top-strip">
         <div className="left-text">Welcome to our online shop!</div>
+        <div className="brand-box">
+          <img src="../../../../public/general_images/logo.png" alt="logo" />
+          <strong className='brand-name'>Soft Land</strong>
+        </div>
         <div className="account-box">
           <span className="login-btn">Login</span> | <span className="sign-up">sign up</span>
         </div>

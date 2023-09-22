@@ -8,18 +8,17 @@
     margin-bottom: 50px;
 
     .slider-box {
-        width: 800px;
-        height: 380px;
+        width: 900px;
+        height: 500px;
         border-radius: 5px;
-        background: linear-gradient(103.4deg, rgba(241, 250, 255, 0.88) 0.89%, #F1FAFF 101.61%);
-        transform: translateX(100px);
+        background: linear-gradient(103.4deg, #f1faffe0 0.89%, #F1FAFF 101.61%);
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .sidebar {
             width: 150px;
-            height: 100%;
+            height: 80%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -120,7 +119,7 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: 10px;
+            bottom: 50px;
             width: 120px;
             height: 18px;
             display: flex;
@@ -142,6 +141,64 @@
                     height: 9px;
                     background-color: var(--main-color);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slider-section {
+        .slider-box {
+            width: 95%;
+            height: 450px;
+
+            .main-box {
+                .text-box {
+                    .top-text {
+                        font-size: 18px;
+                    }
+
+                    .bold-text {
+                        font-size: 26px;
+                    }
+
+                    .off-text {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-section {
+        padding: 15px 0;
+        align-items: flex-start;
+
+        .slider-box {
+            padding: 20px 10px;
+            flex-direction: column;
+
+            .sidebar {
+                flex-direction: row;
+                width: 400px;
+                height: 80px;
+
+                .item {
+                    height: 100%;
+                    width: 32%;
+                }
+            }
+
+            .circles-box {
+                left: unset;
+                right: 40px;
+                bottom: 30px;
+                transform: translateX(0);
+                flex-direction: column;
+                width: 20px;
+                height: 100px;
             }
         }
     }

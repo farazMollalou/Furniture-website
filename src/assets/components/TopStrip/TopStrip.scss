@@ -16,6 +16,10 @@
         cursor: default;
     }
 
+    .brand-box {
+        display: none;
+    }
+
     .account-box {
         position: absolute;
         right: 70px;
@@ -28,7 +32,8 @@
         justify-content: space-between;
         font-weight: 500;
 
-        .login-btn, .sign-up {
+        .login-btn,
+        .sign-up {
             transition: .4s;
             cursor: pointer;
 
@@ -37,4 +42,34 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 670px) {
+.top-strip {
+    padding: 0 20px;
+
+    .left-text {
+        display: none;
+    }
+    .brand-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        img {
+            transform: scale(.8);
+        }
+
+        strong {
+            font-weight: 700;
+            font-size: 22px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+    .account-box {
+        right: 20px;
+    }
+}
 }

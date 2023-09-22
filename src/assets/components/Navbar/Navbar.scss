@@ -61,6 +61,12 @@
         height: 100%;
         margin-right: 20px;
 
+        &:hover {
+            .collection-list {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
         .collection-btn {
             width: 260px;
             height: 100%;
@@ -79,6 +85,7 @@
 
         .collection-list {
             position: absolute;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -86,8 +93,11 @@
             background-color: #F7F8FA;
             width: 100%;
             overflow: hidden;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             z-index: 2;
+            border: 2px solid #555;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            box-shadow: var(--box-shd);
 
             .item {
                 width: 100%;
@@ -110,4 +120,13 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar-container {
+        padding-left: 0;
+        justify-content: center;
+        height: 60px;
+        margin: 25px 0;
+    }
 }
