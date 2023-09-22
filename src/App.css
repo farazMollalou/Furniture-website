@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   /* --main-color: #7AC751; */
   --main-color: #7600c4;

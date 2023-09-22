@@ -1,7 +1,10 @@
+import LoginPageComponent from "../components/LoginPageComponent/LoginPageComponent"
 
 function LoginPage() {
   return (
-    <div>LoginPage</div>
+    <>
+      <LoginPageComponent />
+    </>
   )
 }
 
