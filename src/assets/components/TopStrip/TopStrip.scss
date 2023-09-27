@@ -36,6 +36,8 @@
         .sign-up {
             transition: .4s;
             cursor: pointer;
+            text-decoration: none;
+            color: #fff;
 
             &:hover {
                 color: #01003e;

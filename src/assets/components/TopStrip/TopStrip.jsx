@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./TopStrip.scss"
 
 function TopStrip() {
@@ -10,7 +11,7 @@ function TopStrip() {
           <strong className='brand-name'>Soft Land</strong>
         </div>
         <div className="account-box">
-          <span className="login-btn">Login</span> | <span className="sign-up">sign up</span>
+          <Link className="login-btn" to={"/login"}>Login</Link> | <span className="sign-up">sign up</span>
         </div>
       </div>
     </>
