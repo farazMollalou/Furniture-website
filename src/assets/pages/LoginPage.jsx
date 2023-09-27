@@ -1,4 +1,5 @@
-import LoginPageComponent from "../components/LoginPageComponent/LoginPageComponent"
+import LoginPageComponent from "../components/LoginPageComponent/LoginFormComponent"
+
 
 function LoginPage() {
   return (

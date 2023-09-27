@@ -11,7 +11,7 @@ function TopStrip() {
           <strong className='brand-name'>Soft Land</strong>
         </div>
         <div className="account-box">
-          <Link className="login-btn" to={"/login"}>Login</Link> | <span className="sign-up">sign up</span>
+          <Link className="login-btn" to={"/login"}>Login</Link> | <Link to={"/sign-up"} className="sign-up">sign up</Link>
         </div>
       </div>
     </>
