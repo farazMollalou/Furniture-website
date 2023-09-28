@@ -113,6 +113,9 @@
 .login-page-container .login .content .form .inputBox input:focus {
     background-color: #2b15a4;
 }
+.login-page-container .login .content .form .inputBox input[type="submit"]:focus {
+  background-color: #0f0;
+}
 .login-page-container .login .content .form .inputBox i 
 {
   position: absolute;

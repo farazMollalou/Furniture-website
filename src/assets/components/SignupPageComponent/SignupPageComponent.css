@@ -41,6 +41,7 @@
   background: #e6e6e6;
   z-index: 2;
   border-radius: 5px;
+  opacity: .95;
   transition: 1.5s;
 }
 .signup-page-container .bg-square:hover 
@@ -112,6 +113,9 @@
 }
 .signup-page-container .sign-up .content .form .inputBox input:focus {
     background-color: #2b15a4;
+}
+.signup-page-container .sign-up .content .form .inputBox input[type="submit"]:focus {
+  background-color: #0f0;
 }
 .signup-page-container .sign-up .content .form .inputBox i 
 {
