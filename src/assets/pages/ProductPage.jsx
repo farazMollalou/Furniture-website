@@ -16,7 +16,7 @@ function ProductPage() {
 
     useEffect(() => {
         setTimeout(() => {
-            setIsLoaded(false)
+            setIsLoaded(true)
         }, 3000)
     }, [])
 
